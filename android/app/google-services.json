@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "801692932561",
+    "project_id": "pawfect-match-34c4f",
+    "storage_bucket": "pawfect-match-34c4f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801692932561:android:8ba62cfd83479db9a528f0",
+        "android_client_info": {
+          "package_name": "com.pawfectmatch.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801692932561-aiehr1d0pndi77m64jkcc08emsrt8t9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pawfectmatch.app",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "801692932561-6gkmmj28dhi8nqh9prnu0054191g08uq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOZPee9miTDDoG6RKe5TCSwlZzTRx3Ti4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801692932561-6gkmmj28dhi8nqh9prnu0054191g08uq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "801692932561-n61ampu0p2jpfkdcstbfeo6o73iakvi2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pawfectmatch.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
