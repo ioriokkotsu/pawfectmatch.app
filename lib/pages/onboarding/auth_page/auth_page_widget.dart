@@ -1558,7 +1558,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget>
                                                                   .createAccountWithEmail(
                                                             context,
                                                             _model
-                                                                .displayNameTextController
+                                                                .emailAddressCreateTextController
                                                                 .text,
                                                             _model
                                                                 .passwordCreateTextController
@@ -1574,7 +1574,7 @@ class _AuthPageWidgetState extends State<AuthPageWidget>
                                                               .update({
                                                             ...createUsersRecordData(
                                                               email: _model
-                                                                  .displayNameTextController
+                                                                  .emailAddressCreateTextController
                                                                   .text,
                                                               displayName: _model
                                                                   .displayNameTextController
