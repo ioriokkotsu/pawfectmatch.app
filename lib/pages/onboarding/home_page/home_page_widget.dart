@@ -38,19 +38,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
 
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'HomePage'});
     animationsMap.addAll({
-      'textOnPageLoadAnimation': AnimationInfo(
-        loop: true,
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 130.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
-          ),
-        ],
-      ),
       'containerOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -643,8 +630,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
-                          ).animateOnPageLoad(
-                              animationsMap['textOnPageLoadAnimation']!),
+                          ),
                           AuthUserStreamWidget(
                             builder: (context) => Text(
                               valueOrDefault<String>(
@@ -761,15 +747,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           borderRadius: BorderRadius.circular(16.0),
                         ),
                         child: Container(
-                          width: MediaQuery.sizeOf(context).width * 1.0,
-                          height: 280.0,
+                          width: MediaQuery.sizeOf(context).width * 0.871,
+                          height: 442.98,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 5.0, 16.0, 5.0),
+                                40.0, 5.0, 40.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -794,6 +780,58 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   verticalDirection: VerticalDirection.down,
                                   clipBehavior: Clip.none,
                                   children: [
+                                    InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        logFirebaseEvent(
+                                            'HOME_PAGE_PAGE_Container_t8cvayzg_ON_TAP');
+                                        logFirebaseEvent(
+                                            'Container_navigate_to');
+
+                                        context.pushNamed('MyFavoritePage');
+                                      },
+                                      child: Container(
+                                        width: 100.0,
+                                        height: 100.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondary,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.favorite,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              size: 32.0,
+                                            ),
+                                            Text(
+                                              'Favourites',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
+                                                        fontSize: 12.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                            ),
+                                          ].divide(SizedBox(height: 8.0)),
+                                        ),
+                                      ),
+                                    ),
                                     InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -864,7 +902,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         height: 100.0,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .primary,
+                                              .secondary,
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                         ),
@@ -877,7 +915,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               Icons.pets_rounded,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondary,
+                                                      .primary,
                                               size: 32.0,
                                             ),
                                             Text(
@@ -887,6 +925,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -913,7 +954,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         height: 100.0,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .primary,
+                                              .secondary,
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                         ),
@@ -926,7 +967,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               Icons.calendar_month,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondary,
+                                                      .primary,
                                               size: 32.0,
                                             ),
                                             AutoSizeText(
@@ -936,6 +977,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       .bodySmall
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
                                                         fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -955,7 +999,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         logFirebaseEvent(
                                             'Container_navigate_to');
 
-                                        context.pushNamed('MyFavoritePage');
+                                        context.pushNamed('SupportCenter');
                                       },
                                       child: Container(
                                         width: 100.0,
@@ -972,14 +1016,66 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               MainAxisAlignment.center,
                                           children: [
                                             Icon(
-                                              Icons.favorite,
+                                              Icons.support,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
                                               size: 32.0,
                                             ),
                                             Text(
-                                              'Favourites',
+                                              'FAQs',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .primaryBackground,
+                                                        fontSize: 12.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                            ),
+                                          ].divide(SizedBox(height: 8.0)),
+                                        ),
+                                      ),
+                                    ),
+                                    InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        logFirebaseEvent(
+                                            'HOME_PAGE_PAGE_Container_wa8v49zn_ON_TAP');
+                                        logFirebaseEvent(
+                                            'Container_navigate_to');
+
+                                        context.pushNamed('SocialProfilePage');
+                                      },
+                                      child: Container(
+                                        width: 100.0,
+                                        height: 100.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondary,
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.person,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primary,
+                                              size: 32.0,
+                                            ),
+                                            Text(
+                                              'Social',
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall

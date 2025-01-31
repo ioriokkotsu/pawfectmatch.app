@@ -14,7 +14,7 @@ export '/pages/onboarding/account_page/account_page_widget.dart'
     show AccountPageWidget;
 export '/pages/profile/support_center/support_center_widget.dart'
     show SupportCenterWidget;
-export '/pages/forgot_password/forgot_password_widget.dart'
+export '/pages/onboarding/forgot_password/forgot_password_widget.dart'
     show ForgotPasswordWidget;
 export '/appointment/my_appointment_page/my_appointment_page_widget.dart'
     show MyAppointmentPageWidget;

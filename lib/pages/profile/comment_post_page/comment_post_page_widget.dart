@@ -76,6 +76,7 @@ class _CommentPostPageWidgetState extends State<CommentPostPageWidget> {
               color: FlutterFlowTheme.of(context).alternate,
               textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                     fontFamily: 'Inter',
+                    color: Colors.white,
                     letterSpacing: 0.0,
                   ),
               elevation: 0.0,

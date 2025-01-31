@@ -640,10 +640,6 @@ class _SocialProfilePageWidgetState extends State<SocialProfilePageWidget> {
                                   children: [
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
-                                      children: [],
-                                    ),
-                                    Column(
-                                      mainAxisSize: MainAxisSize.max,
                                       children: [
                                         AuthUserStreamWidget(
                                           builder: (context) => Text(

@@ -991,10 +991,7 @@ class _MyFavoritePageWidgetState extends State<MyFavoritePageWidget> {
                                                     true)
                                                   Container(
                                                     decoration: BoxDecoration(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .accent1,
+                                                      color: Color(0x9E86C144),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               24.0),
@@ -1019,9 +1016,8 @@ class _MyFavoritePageWidgetState extends State<MyFavoritePageWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Inter',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primary,
+                                                                  color: Colors
+                                                                      .white,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight:

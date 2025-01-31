@@ -867,95 +867,6 @@ class _AuthPageWidgetState extends State<AuthPageWidget>
                                                                   ),
                                                                 ),
                                                               ),
-                                                              isAndroid
-                                                                  ? Container()
-                                                                  : Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          16.0),
-                                                                      child:
-                                                                          FFButtonWidget(
-                                                                        onPressed:
-                                                                            () async {
-                                                                          logFirebaseEvent(
-                                                                              'AUTH_CONTINUE_WITH_APPLE_BTN_ON_TAP');
-                                                                          logFirebaseEvent(
-                                                                              'Button_auth');
-                                                                          GoRouter.of(context)
-                                                                              .prepareAuthEvent();
-                                                                          final user =
-                                                                              await authManager.signInWithApple(context);
-                                                                          if (user ==
-                                                                              null) {
-                                                                            return;
-                                                                          }
-
-                                                                          context.goNamedAuth(
-                                                                              'HomePage',
-                                                                              context.mounted);
-                                                                        },
-                                                                        text:
-                                                                            'Continue with Apple',
-                                                                        icon:
-                                                                            FaIcon(
-                                                                          FontAwesomeIcons
-                                                                              .apple,
-                                                                          size:
-                                                                              20.0,
-                                                                        ),
-                                                                        options:
-                                                                            FFButtonOptions(
-                                                                          width:
-                                                                              230.0,
-                                                                          height:
-                                                                              44.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).tertiary,
-                                                                          textStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Inter',
-                                                                                color: Colors.black,
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.bold,
-                                                                              ),
-                                                                          elevation:
-                                                                              0.0,
-                                                                          borderSide:
-                                                                              BorderSide(
-                                                                            color:
-                                                                                Colors.black,
-                                                                            width:
-                                                                                2.0,
-                                                                          ),
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(40.0),
-                                                                          hoverColor:
-                                                                              FlutterFlowTheme.of(context).alternate,
-                                                                          hoverBorderSide:
-                                                                              BorderSide(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).alternate,
-                                                                            width:
-                                                                                2.0,
-                                                                          ),
-                                                                          hoverTextColor:
-                                                                              Colors.black,
-                                                                        ),
-                                                                      ),
-                                                                    ),
                                                             ],
                                                           ),
                                                         ),
@@ -1528,6 +1439,8 @@ class _AuthPageWidgetState extends State<AuthPageWidget>
                                                                   0.0,
                                                                   16.0),
                                                       child: FFButtonWidget(
+                                                        key: ValueKey(
+                                                            'Button_rajj'),
                                                         onPressed: () async {
                                                           logFirebaseEvent(
                                                               'AUTH_PAGE_PAGE_CREATE_ACCOUNT_BTN_ON_TAP');
@@ -1819,95 +1732,6 @@ class _AuthPageWidgetState extends State<AuthPageWidget>
                                                                   ),
                                                                 ),
                                                               ),
-                                                              isAndroid
-                                                                  ? Container()
-                                                                  : Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          16.0),
-                                                                      child:
-                                                                          FFButtonWidget(
-                                                                        onPressed:
-                                                                            () async {
-                                                                          logFirebaseEvent(
-                                                                              'AUTH_CONTINUE_WITH_APPLE_BTN_ON_TAP');
-                                                                          logFirebaseEvent(
-                                                                              'Button_auth');
-                                                                          GoRouter.of(context)
-                                                                              .prepareAuthEvent();
-                                                                          final user =
-                                                                              await authManager.signInWithApple(context);
-                                                                          if (user ==
-                                                                              null) {
-                                                                            return;
-                                                                          }
-
-                                                                          context.goNamedAuth(
-                                                                              'HomePage',
-                                                                              context.mounted);
-                                                                        },
-                                                                        text:
-                                                                            'Continue with Apple',
-                                                                        icon:
-                                                                            FaIcon(
-                                                                          FontAwesomeIcons
-                                                                              .apple,
-                                                                          size:
-                                                                              20.0,
-                                                                        ),
-                                                                        options:
-                                                                            FFButtonOptions(
-                                                                          width:
-                                                                              230.0,
-                                                                          height:
-                                                                              44.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).tertiary,
-                                                                          textStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                fontFamily: 'Inter',
-                                                                                color: Colors.black,
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FontWeight.bold,
-                                                                              ),
-                                                                          elevation:
-                                                                              0.0,
-                                                                          borderSide:
-                                                                              BorderSide(
-                                                                            color:
-                                                                                Colors.black,
-                                                                            width:
-                                                                                2.0,
-                                                                          ),
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(40.0),
-                                                                          hoverColor:
-                                                                              FlutterFlowTheme.of(context).alternate,
-                                                                          hoverBorderSide:
-                                                                              BorderSide(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).alternate,
-                                                                            width:
-                                                                                2.0,
-                                                                          ),
-                                                                          hoverTextColor:
-                                                                              Colors.black,
-                                                                        ),
-                                                                      ),
-                                                                    ),
                                                             ],
                                                           ),
                                                         ),
